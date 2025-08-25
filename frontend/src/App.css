@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.doctor-btn-tabs-active{
+  background-color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: black !important;
+  border: 1px solid #4646465c;
+}
+.find-doc-page-head{
+  font-size: 35px !important;
+  color: rgb(52, 52, 52) !important;
+}
+.find-doc-page-subhead{
+  margin-top: 15px;
+}
+.doc_card_img{
+  height: 382px;
+  border-radius: 10px;
+}
+.find_Doc_sec{
+  height: 325px;
+  width: 100%;
+  background-image: url(/src/assets/images/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.doc_card_box{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+
+
+}
+.doc_card_box:hover{
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  
+}
+.swiper-pagination-bullet{
+  width: 12px !important;
+  height: 12px !important;
+  border: 1px solid #181a1e !important;
+  opacity: 100% !important;
+  background: #fff !important;
+}
+
+.swiper-pagination-bullet-active{
+  background: #357C4D !important;
+  border:none !important;
+}
+
+.swiper{
+  padding-bottom: 70px !important;
+}
+
+.swiper-slide.swiper-slide-next{
+  background: #357C4D;
+  border-radius:12px;
+  box-shadow: 0px 20px 70px rgba(26, 151, 74, 0.3) !important;
+}
+
+.swiper-slide.swiper-slide-next h4, .swiper-slide.swiper-slide-next p{
+  color: #fff !important;
+}
+
+.swiper-pagination{
+  top:90% !important;
+}
+
+.sticky__header{
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  position:sticky;
+  top:0;
+  left:0;
+  z-index: 99999;
+  background: white;
+  box-shadow: 3px 3px -8px 3px #ddd;
+}
+
+@media only screen and (max-width:768px){
+  .navigation{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 100;
+    background: #00000084;
+    display: none;
+  }
+
+  .menu{
+    width: 15rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right:0;
+    background: #fff;
+    z-index: 200;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    line-height:30px;
+  }
+
+  .show__menu{
+    display:block;
+  }
+}
